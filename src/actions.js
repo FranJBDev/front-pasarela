@@ -27,11 +27,11 @@ export function sendCart(data) {
                 'Access-Control-Allow-Origin': '*',
                 'Access-Control-Allow-Headers': 'POST, GET, PUT, DELETE, OPTIONS, HEAD, Authorization, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Access-Control-Allow-Origin',
                 'Content-Type': 'application/json',
-            }, data: data1
+            }, data: data
         };
 
         try {
-            console.log('Actions>>>>>>>', data1)
+            console.log('Actions>>>>>>>', data)
             // axios.post('https://demo-pasarela.herokuapp.com/mp', data);
             const payload = await axios(config);
             console.log('Payload', payload.data.url)
